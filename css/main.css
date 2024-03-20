@@ -210,6 +210,9 @@ main > .mainDesktop > .riga > a > img{
         margin: 3px;
     }
 
+    .button{
+      margin-bottom: 20px;
+    }
 
 }
 
