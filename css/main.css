@@ -183,7 +183,7 @@ main > .mainDesktop > .riga > a > img{
         display: flex;
         flex-direction: column;
         padding-top: 20px;
-        margin-top: 40px;
+        margin-top: 0px;
       }
 
       .game-title{
@@ -212,6 +212,10 @@ main > .mainDesktop > .riga > a > img{
 
     .button{
       margin-bottom: 20px;
+    }
+
+    #margin {
+      margin-top: 300px;
     }
 
 }

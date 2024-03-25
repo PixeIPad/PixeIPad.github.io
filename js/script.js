@@ -4,8 +4,28 @@ window.addEventListener("load", function(){
               padding: 200
       });
     });
-
+  const MenuMobile = document.getElementById("MenuImg");
+  MenuMobile.addEventListener("click", showMenu);
 });
+
+function showMenu (){
+
+  const banner = document.getElementById("banner");
+  const mobileMain = document.getElementById("mainMobile");
+  const footer = document.getElementById("footer");
+
+  if(banner.classList.contains("hide")){
+    banner.classList.remove("hide");
+    mobileMain.classList.remove("hide");
+    footer.classList.remove("hide");
+  }
+  else{
+    banner.classList.add("hide");
+    mobileMain.classList.add("hide");
+    footer.classList.add("hide");
+  }
+
+}
 
 function changeBg(bg, title){
   const banner = document.querySelector('.banner');

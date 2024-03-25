@@ -1,22 +1,21 @@
+.contenitorMobile{
+  display: none;
+}
+
+.hide{
+  display: none;
+}
 
 body {
   background-color: #404040;
   color: white;
 }
 
-li{
-  color: transparent;
-}
-
 .headerMobile {
   display: none;
 }
 
-.Dropdowncontent {
-  display: none;
-}
-
-.checkbox {
+.Dropdowncontent{
   display: none;
 }
 
@@ -35,7 +34,7 @@ header>nav>.headerDesktop {
 }
 
 header>nav>.headerDesktop>.img>a>img {
-  height: 75px;
+  height: 95px;
 }
 
 header > nav > .headerDesktop > .Menu{
@@ -96,23 +95,47 @@ header > nav > .headerDesktop > .Data{
     margin-top: 10px;
   }
 
-  .ElementsMenu{
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      justify-content: space-around;
-      transform: translate(0,3);
+  .contenitorMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/background\ Mobileù.jpg);
+    background-size: 100%;
+    padding-bottom: 350px;
   }
 
-  .ElementsMenu > a > img{
-      height: 30px;
-      margin-right: 20px;
+  .contenitorMobile > a > img{
+    height: 25px;
+  }
+  .contenitorMobile > a{
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #404040;
+    opacity: 0.8;
+    border-radius: 12px;
   }
 
-  .ElementsMenu > a{
-      align-items: center;
-      display: flex;
+  .contenitorMobile > a:hover{
+
+    text-decoration: underline;
+    color: gold;
   }
 
+  .LogoMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .LogoMobile > img{
+    height: 120px;
+  }
+
+  .LogoMobile > h1{
+    font-size: 20px;
+    opacity: 0.5;
+  }
 
 }
