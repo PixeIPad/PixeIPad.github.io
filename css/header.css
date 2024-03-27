@@ -2,6 +2,10 @@
   display: none;
 }
 
+.LogoMobile{
+  display: none;
+}
+
 .hide{
   display: none;
 }
@@ -102,6 +106,7 @@ header > nav > .headerDesktop > .Data{
     background: url(../img/background\ Mobileù.jpg);
     background-size: 100%;
     padding-bottom: 350px;
+    padding-top: 30px;
   }
 
   .contenitorMobile > a > img{
