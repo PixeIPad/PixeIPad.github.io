@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Nicolas Dominici Previotto Umberto" />
+  <meta name="description" content="Pixelpad, notebooks asus Rog zephyrius 4090 amd ryzen computer potente" />
+  <meta name="keywords" content="Pixelpad, computer, offerte, ultime uscite" />
+  <meta name="og:title" content="Pixelpad" />
+  <meta name="og:type" content="website" />
+  <link rel="icon" href="../img/Logo.ico" />
+  <meta name="og:image" content="../img/Logo.ico" />
+  <meta name="og:description" content="Pixelpad, sito web ufficiale" />
+  <title>PIXELPAD - NOTEBOOKS | ITALIA</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  
+  <!-- Personal styles and scripts -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <link href="css/notebooks.css" rel="stylesheet" />
+  <script type="application/javascript" src="js/shop.js"></script>
+  <script type="application/javascript" src="js/search.js"></script>
+</head>
+
+<body data-bs-theme="dark">
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary" data-aos="fade-down">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html"><img src="../img/Logo/Pixelpad-removebg-preview.png" /></a>
+        <!-- Toggle btn -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar -->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!-- Sider header -->
+          <div class="offcanvas-header text-white border-bottom Border">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Pixelpad
+            </h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <!-- Sider Body -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="notebooks.html">Notebooks</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="desktop.html">Computer</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Periferiche
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="keyboard.html">Tastiere</a>
+                  <a class="dropdown-item" href="mouse.html">Mouse</a>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+              <!-- Search bar -->
+              <img src="../img/search-button-icon-33.png" id="search-icon" onclick="toggleSearch()"></img>
+              <div id="search-container" class="d-none">
+                <input type="text" id="search-input" placeholder="Cerca..." />
+                <button id="search-button" onclick="Search()">Cerca</button>
+              </div>
+              <!-- Login / Sing up -->
+              <a href="../Register-Login/login.html" class="text-white">Login</a>
+              <a href="../Register-Login/sign-up.html" class="text-black text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: aquamarine">Sign Up</a>
+              <!-- Sun / Moon -->
+              <div class="form-check form-switch mx-4">
+                <input class="form-check-input p-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked
+                  onclick="changeColor()" />
+                <img src="../img/Logo/icon moon.png" class="moon" />
+                <img src="../img/Logo/icon sun.png" class="sun" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Notebook video -->
+    <iframe data-aos="fade-up" width="100%" height="900"
+      src="https://www.youtube.com/embed/hNqv5LgODvI?autoplay=1&mute=1&controls=0"
+      title="2021 ROG Zephyrus Duo 15 SE - Two Screens. Zero Limits. | ROG" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Shop Notebook -->
+    <div class="shop" data-aos="fade-left">
+      <!-- main image -->
+      <img class="main-img" id="mainImg" src="../img/Product/notebooks1.avif" data-aos="fade-up" />
+      <div class="item-column">
+        <!-- Left column image -->
+        <img src="../img/Product/notebooks1.avif" onclick="changeImg('../img/Product/notebooks1.avif')"
+          data-aos="fade-left" />
+        <img src="../img/Product/notebooks2.avif" onclick="changeImg('../img/Product/notebooks2.avif')"
+          data-aos="fade-left" />
+        <img src="../img/Product/notebooks3.avif" onclick="changeImg('../img/Product/notebooks3.avif')"
+          data-aos="fade-left" />
+        <img src="../img/Product/notebooks4.avif" onclick="changeImg('../img/Product/notebooks4.avif')"
+          data-aos="fade-left" />
+        <img src="../img/Product/notebooks5.avif" onclick="changeImg('../img/Product/notebooks5.avif')"
+          data-aos="fade-left" />
+        <img src="../img/Product/notebooks6.avif" onclick="changeImg('../img/Product/notebooks6.avif')"
+          data-aos="fade-left" />
+      </div>
+      <!-- Product description -->
+      <div class="description" data-aos="fade-down">
+        <div class="product-specs">
+          <h2>Rog zephyrus duo</h2>
+          <h5 class="ms-4 mt-3">Dati techinici</h5>
+          <ul class="specs-list">
+            <li><strong>CPU</strong>Amd Ryzen 9</li>
+            <li><strong>GPU</strong>Nvidia RTX 4090</li>
+            <li><strong>RAM</strong> 64 Gb</li>
+            <li><strong>STORAGE</strong> 1 Tb Estendibile</li>
+            <li><strong>PREZZO</strong> 3500,00 €</li>
+          </ul>
+          <button class="p-1" data-bs-toggle="modal" data-bs-target="#Buy-modal">
+            Acquista ora
+          </button>
+        </div>
+        <!-- Add other item -->
+        <div class="related-products p-1">
+          <h3>Aggiungi altri prodotti</h3>
+          <ul class="related-products-list">
+            <li>
+              <h4>Custodia per Rog zephyrus</h4>
+              <p>29,99 €</p>
+              <button class="p-1 bg-secondary" data-bs-toggle="modal" data-bs-target="#Add-modal">
+                Aggiungi
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- More specifich -->
+    <div class="container mt-5" id="specifich">
+      <h1>Specifiche tecniche</h1>
+      <div class="row mt-5 border-bottom pb-2 Border" data-aos="fade-up">
+        <h1 class="col-md-6">Marchio:</h1>
+        <h1 class="col-md-6">Asus</h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border" data-aos="fade-up">
+        <h1 class="col-md-6">Nome Modello:</h1>
+        <h1 class="col-md-6">ROG Zephyrus Duo 16</h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border hide hideSpec" data-aos="fade-up">
+        <h1 class="col-md-6">Colore:</h1>
+        <h1 class="col-md-6">Black</h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border hide hideSpec" data-aos="fade-up">
+        <h1 class="col-md-6">Modello Cpu</h1>
+        <h1 class="col-md-6">Rayzen 9 </h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border hide hideSpec" data-aos="fade-up">
+        <h1 class="col-md-6">Sistema operativo:</h1>
+        <h1 class="col-md-6">Windows 10</h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border hide hideSpec" data-aos="fade-up">
+        <h1 class="col-md-6">Descrizione scheda grafica:</h1>
+        <h1 class="col-md-6">Nvidia RTX 4090</h1>
+      </div>
+      <div class="row mt-5 border-bottom pb-2 Border hide hideSpec" data-aos="fade-up">
+        <h1 class="col-md-6">Coprocessore grafico</h1>
+        <h1 class="col-md-6">Nvidia geforce RTX 4090</h1>
+      </div>
+      <!-- Btn show other -->
+      <button class="showOther text-white" onclick="ShowOther()">▼ Mostra di più ▼</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="bg-dark mt-3">
+    <footer class="text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px;">
+              <img src="../img/Logo/Pixelpad-removebg-preview.png" height="70" alt="" loading="lazy" />
+            </div>
+            <p class="text-center">Non siamo solo una compagnia<br>ma siamo anche dei ladri</p>
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">PRODOTTI</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href=".notebooks.html" class="text-white"><i class="fas fa-laptop pe-3"></i>Notebooks</a>
+              </li>
+              <li class="mb-2">
+                <a href="desktop.html" class="text-white"><i class="fas fa-desktop pe-3"></i>Desktop</a>
+              </li>
+              <li class="mb-2">
+                <a href="mouse.html" class="text-white"><i class="fas fa-mouse pe-3"></i>Mouse</a>
+              </li>
+              <li class="mb-2">
+                <a href="keyboard.html" class="text-white"><i class="fas fa-keyboard pe-3"></i>Tastiera</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">VIDEO GAME</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-steam pe-3"></i>Steam</a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-xbox pe-3"></i>Xbox</a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-playstation pe-3"></i>Playstation</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">Contattaci</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>Vallauri, Fossano</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>+ 356 74 3 2 1 VIA !</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>ti.rubiamo.i.soldi@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <p class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:Pixel Pad</p>
+   </footer>
+  </div>
+  
+  <!-- Modals -->
+  <!-- Modal Contact us -->
+  <div class="modal" tabindex="-1" id="Contact-us-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Il nostro capo ha detto:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>NO NON TI VOGLIAMO</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Piangi
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals -->
+  <!-- Modal No Game -->
+  <div class="modal" tabindex="-1" id="No-Game-Moduals">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Prossimamente...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Non abbiamo abbastanza badget per acquistare dei giochi</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            li compro su steam
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Buy Modal -->
+  <div class="modal" tabindex="-1" id="Buy-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Acquisto in corso..</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Errore, devi essere loggato per fare un acquisto</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add Item modal -->
+  <div class="modal" tabindex="-1" id="Add-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Aggiunta in corso...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Prodotto aggiunto con successo !</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

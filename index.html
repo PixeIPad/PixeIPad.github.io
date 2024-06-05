@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Nicolas Dominici Previotto Umberto" />
+  <meta name="description" content="Pixelpad, sito web ufficiale" />
+  <meta name="keywords" content="Pixelpad, computer, offerte" />
+  <meta name="og:title" content="Pixelpad" />
+  <meta name="og:type" content="website" />
+  <link rel="icon" href="img/Logo.ico" />
+  <meta name="og:image" content="img/Logo.ico" />
+  <meta name="og:description" content="Pixelpad, sito web ufficiale" />
+  <title>PIXELPAD - HOME | ITALIA</title>
+  
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- Personal styles and scripts -->
+  <link href="css/style.css" rel="stylesheet" />
+  <script type="application/javascript" src="js/script.js"></script>
+</head>
+
+<body data-bs-theme="dark">
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-primary" data-aos="fade-down">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html"><img src="img/Logo/Pixelpad-removebg-preview.png" /></a>
+        <!-- Toggle btn -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar -->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <!-- Sider header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Pixelpad
+            </h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <!-- Sider Body -->
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="Products/notebooks.html">Notebooks</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="Products/desktop.html">Computer</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Periferiche
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Products/keyboard.html">Tastiere</a>
+                  <a class="dropdown-item" href="Products/mouse.html">Mouse</a>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+              <!-- Search bar -->
+              <img src="img/search-button-icon-33.png" id="search-icon" onclick="toggleSearch()"></img>
+              <div id="search-container" class="d-none">
+                <input type="text" id="search-input" placeholder="Cerca..." />
+                <button id="search-button" onclick="Search()">Cerca</button>
+              </div>
+              <!-- Login / Sing up -->
+              <a href="Register-Login/login.html" class="text-white">Login</a>
+              <a href="Register-Login/sign-up.html" class="text-black text-decoration-none px-3 py-1 rounded-4"
+                style="background-color: aquamarine">Sign Up</a>
+              <!-- Sun / Moon -->
+              <div class="form-check form-switch mx-4">
+                <input class="form-check-input p-2" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked
+                  onclick="changeColor()" />
+                <img src="img/Logo/icon moon.png" class="moon" />
+                <img src="img/Logo/icon sun.png" class="sun" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Carousel Item -->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions" data-aos="fade-up">
+      <div class="carousel-inner">
+        <!-- Item 1 -->
+        <div class="carousel-item active bg-1">
+          <div class="carousel-caption">
+            <a href="Products/notebooks.html">Acquista</a>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="carousel-item bg-2">
+          <div class="carousel-caption">
+            <a href="Products/keyboard.html">Acquista</a>
+          </div>
+        </div>
+        <!-- Item 3-->
+        <div class="carousel-item bg-3">
+          <div class="carousel-caption">
+            <a href="Products/desktop.html">Acquista</a>
+          </div>
+        </div>
+      </div>
+      <!-- Buttons Next Previous -->
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+        type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+        type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <!--thumbnails-->
+      <div class="carousel-indicators">
+        <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions"
+          type="button">
+          <img class="img-fluid" src="img/Carousel/hom1.webp" />
+        </button>
+        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button">
+          <img class="img-fluid" src="img/Carousel/home2.webp" />
+        </button>
+        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button">
+          <img class="img-fluid" src="img/Carousel/home3.webp" />
+        </button>
+      </div>
+    </div>
+    <!-- Contact Us -->
+    <!-- Background Video -->
+    <div class="Background" data-aos="fade-down">
+      <video src="video/video1.mp4" data-aos="fade-up" class="vid-bg" autoplay loop muted></video>
+      <!-- Text -->
+      <div class="welcome-text text-center">
+        <h2>Chi Siamo ?</h2>
+        <p>
+          Azienda numero 1 in Italia ricercata per furti e imbrogli<br />vuoi
+          unirti a noi ?
+        </p>
+        <!-- Button contact us -->
+        <button class="btn" data-bs-toggle="modal" data-bs-target="#Contact-us-modal">
+          Contattaci
+        </button>
+      </div>
+    </div>
+    <!-- Ours Products-->
+    <div class="ours-Products border-top pb-5 mt-5 container Border">
+      <h1 class="p-5">Scopri i nostri prodotti</h1>
+    </div>
+    <div class="container text-center justify-content-center border-bottom Products Border" data-aos="fade-lg-up">
+      <div class="row">
+        <!-- Notebooks -->
+        <a class="col-md-3 mb-5" href="Products/notebooks.html"><img src="img/Product/Notebooks.png" /></a>
+        <!-- Desktop -->
+        <a class="col-md-3 mb-5" href="Products/desktop.html"><img src="img/Product/Desktop.png" /></a>
+        <!-- Keyboard -->
+        <a class="col-md-3 mb-5" href="Products/keyboard.html"><img src="img/Product/keyboard.png" /></a>
+        <!-- Mouse -->
+        <a class="col-md-3 mb-5" href="Products/mouse.html"><img src="img/Product/mouse.png" /></a>
+      </div>
+    </div>
+    <!-- Build Pc -->
+    <div class="Build-pc border-bottom container Border">
+      <!-- Iframe Video -->
+      <iframe width="780" height="439" data-aos="fade-up"
+        src="https://www.youtube.com/embed/bMSqdw0Z5SU?autoplay=1&mute=1&controls=0"
+        title="META $1,000 PC build in 10 minutes." frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <!-- Description -->
+      <div class="description" data-aos="fade-down">
+        <h1>Scegli le tue componenti<br />Il Pc te lo facciamo noi !</h1>
+        <p>Non perdere altro tempo</p>
+        <a href="Products/desktop.html">Seleziona i componenti</a>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <div class="bg-dark">
+    <footer class="text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row my-4">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <div class="shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
+              style="width: 150px; height: 150px;">
+              <img src="img/Logo/Pixelpad-removebg-preview.png" height="70" alt="" loading="lazy" />
+            </div>
+            <p class="text-center">Non siamo solo una compagnia<br>ma siamo anche dei ladri</p>
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">PRODOTTI</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="Products/notebooks.html" class="text-white"><i class="fas fa-laptop pe-3"></i>Notebooks</a>
+              </li>
+              <li class="mb-2">
+                <a href="Products/desktop.html" class="text-white"><i class="fas fa-desktop pe-3"></i>Desktop</a>
+              </li>
+              <li class="mb-2">
+                <a href="Products/mouse.html" class="text-white"><i class="fas fa-mouse pe-3"></i>Mouse</a>
+              </li>
+              <li class="mb-2">
+                <a href="Products/keyboard.html" class="text-white"><i class="fas fa-keyboard pe-3"></i>Tastiera</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">VIDEO GAME</h5>
+
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-steam pe-3"></i>Steam</a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-xbox pe-3"></i>Xbox</a>
+              </li>
+              <li class="mb-2">
+                <a data-bs-toggle="modal" data-bs-target="#No-Game-Moduals" href="#!" class="text-white"><i
+                    class="fab fa-playstation pe-3"></i>Playstation</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 mt-5">
+            <h5 class="text-uppercase mb-4">Contattaci</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>Vallauri, Fossano</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>+ 356 74 3 2 1 VIA !</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>ti.rubiamo.i.soldi@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:Pixel Pad</p>
+   </footer>
+  </div>
+  <!-- Modals -->
+  <!-- Modal Contact us -->
+  <div class="modal" tabindex="-1" id="Contact-us-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Il nostro capo ha detto:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>NO NON TI VOGLIAMO</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Piangi
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal No Game -->
+  <div class="modal" tabindex="-1" id="No-Game-Moduals">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Prossimamente...</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Non abbiamo abbastanza badget per acquistare dei giochi</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            li compro su steam
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Aos script -->
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

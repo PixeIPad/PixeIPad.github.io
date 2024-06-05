@@ -1,0 +1,22 @@
+/*-- Background for Login --*/
+#Login{
+  background-image: url(../../img/Register-login/Dwallpaper.jpg);
+  backdrop-filter: blur(10px);
+}
+
+.gradient-background{
+  background: rgb(25,198,145);
+  background: radial-gradient(circle, rgba(25,198,145,1) 41%, rgba(0,0,0,1) 100%);
+}
+
+.text-content{
+  margin: 20px;
+}
+
+.text-content h4{
+  color: black;
+}
+
+.text-content p{
+  color: black;
+}

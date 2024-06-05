@@ -1,0 +1,256 @@
+/*-- Base css --*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: montserrat;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*-- Navbar css --*/
+/*-- Logo --*/
+.container>a>img {
+  height: 70px;
+}
+
+.form-check > img{
+  height: 20px;
+}
+/*-- Switch light dark --*/
+.moon{
+  display: none;
+}
+.sun{
+  display: block;
+}
+#flexSwitchCheckChecked:checked ~ .moon{
+  display: block;
+}
+#flexSwitchCheckChecked:checked ~ .sun{
+  display: none;
+}
+/*-- Search --*/
+#search-icon{
+  height: 20px;
+}
+/*-- Carousel --*/
+.carousel-item {
+  height: 730px;
+}
+/*-- Background image --*/
+.bg-1 {
+  background-image: url(../img/Carousel/hom1.webp);
+}
+
+.bg-2 {
+  background-image: url(../img/Carousel/home2.webp);
+}
+.bg-3 {
+  background-image: url(../img/Carousel/home3.webp);
+}
+.bg-1,
+.bg-2,
+.bg-3 {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/*-- caption carousel --*/
+.carousel-caption {
+  bottom: 0px;
+  z-index: 2;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-caption a {
+  background-color: aquamarine;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.carousel-caption a:hover{
+  background-color: transparent;
+  border: 1px solid aquamarine;
+  color: aquamarine;
+}
+.carousel-inner:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+/*-- Carousel indicators --*/
+.carousel-indicators {
+  bottom: 65px;
+}
+.carousel-indicators button {
+  width: 100px !important;
+}
+/*-- Contact Us --*/
+/*-- Background --*/
+.Background {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+.vid-bg {
+  width: 100%;
+}
+/*-- Welcome text --*/
+.Background .welcome-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome-text h2 {
+  font-size: 100px;
+  margin: 0;
+  font-family: Berkshire Swash;
+}
+.welcome-text p {
+  font-size: 25px;
+  width: 45%;
+  line-height: 1.8;
+  margin: auto;
+}
+/*-- Btn contact us --*/
+.btn {
+  background-color: #000;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  display: inline-block;
+  margin-top: 25px;
+}
+/*-- Ours Products --*/
+.ours-Products{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*-- Products --*/
+.Products{
+  padding-bottom: 150px;
+}
+/*-- Build Pc --*/
+.Build-pc{
+  margin-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+/*-- Description --*/
+.description > p{
+  font-size: 30px;
+}
+.description > a {
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 12px;
+  background-color: aquamarine;
+  color: black;
+  text-decoration: none;
+}
+.description > a:hover{
+  color: aquamarine;
+  background-color: transparent;
+  border: 1px solid aquamarine;
+}
+/*-- Phone mode --*/
+@media screen and (max-width: 981px) {
+  /*-- Navbar mobile --*/
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  /*-- Img --*/
+  .container>a>img {
+    height: 50px;
+  }
+  /*-- Carousel mobile --*/  
+  /*-- Carousel img --*/
+  .bg-1 {
+    background-image: url(../img/Carousel/home1vertical.webp);
+  }
+  .bg-2 {
+    background-image: url(../img/Carousel/home2vertical.webp);
+  }
+  .bg-3 {
+    background-image: url(../img/Carousel/home3vertical.webp);
+  }
+  .carousel-item {
+    height: 650px;
+  }
+  /*-- Carousel caption --*/
+  .carousel-caption>img {
+    height: 200px;
+    align-items: center;
+  }
+  .carousel-caption {
+    bottom: 0px;
+    top: 520px;
+  }
+  .carousel-caption p {
+    font-size: 17px;
+    width: 100%;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .carousel-indicators{
+    display: none;
+  }
+  /*-- Contact Us --*/
+  /*-- Welcome Text --*/
+  .welcome-text{
+    position: relative;
+    padding-top: 200px
+  }
+  .welcome-text h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  .welcome-text p {
+    width: 90%;
+    line-height: 1.5;
+  }
+  /*-- Build Pc --*/
+  .Build-pc{
+    flex-direction: column;
+  }
+  /*-- Iframe --*/
+  .Build-pc > iframe{
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+  }
+  /*-- Description --*/
+  .Build-pc > .description{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,173 @@
+
+[
+    {
+        "id": 1,
+        "name": "Intel i5-12400F",
+        "type": "Cpu",
+        "price": 132,
+        "image": "../img/Desktop/processor1.png"
+    },
+    {
+        "id": 2,
+        "name": "Ryzen 5 5600X",
+        "type": "Cpu",
+        "price": 119,
+        "image": "../img/Desktop/processor2.png"
+    },
+    {
+        "id": 3,
+        "name": "Intel i9-14900K",
+        "type": "Cpu",
+        "price": 450,
+        "image": "../img/Desktop/processor3.png"
+    },
+    {
+        "id": 4,
+        "name": "ROG STRIX B550-F",
+        "type": "Mother",
+        "price": 169,
+        "image": "../img/Desktop/motherboard1.png"
+    },
+    {
+        "id": 5,
+        "name": "Asus ROG Crosshair",
+        "type": "Mother",
+        "price": 559,
+        "image": "../img/Desktop/motherboard2.png"
+    },
+    {
+        "id": 6,
+        "name": "TUF GAMING X570",
+        "type": "Mother",
+        "price": 229,
+        "image": "../img/Desktop/motherboard3.png"
+    },
+    {
+        "id": 7,
+        "name": "Corsair Vengeance 32 GB",
+        "type": "Ram",
+        "price": 82,
+        "image": "../img/Desktop/ram1.png"
+    },
+    {
+        "id": 8,
+        "name": "Corsair Vengeance 64 GB",
+        "type": "Ram",
+        "price": 224,
+        "image": "../img/Desktop/ram2.png"
+    },
+    {
+        "id": 9,
+        "name": "Corsair Vengeance 64 GB",
+        "type": "Ram",
+        "price": 270,
+        "image": "../img/Desktop/ram3.png"
+    },
+    {
+        "id": 10,
+        "name": "Samsung 980 Pro 2 TB",
+        "type": "storage",
+        "price": 280,
+        "image": "../img/Desktop/storage1.png"
+    },
+    {
+        "id": 11,
+        "name": "Kingston NV2 1 TB",
+        "type": "storage",
+        "price": 180,
+        "image": "../img/Desktop/storage2.png"
+    },
+    {
+        "id": 12,
+        "name": "Western Black 4 TB",
+        "type": "storage",
+        "price": 250,
+        "image": "../img/Desktop/storage3.png"
+    },
+    {
+        "id": 13,
+        "name": "NVIDIA Founders Edition RTX 4090",
+        "type": "Video",
+        "price": 2000,
+        "image": "../img/Desktop/video1.png"
+    },
+    {
+        "id": 14,
+        "name": "Asus ROG STRIX RTX 4080 super",
+        "type": "Video",
+        "price": 1500,
+        "image": "../img/Desktop/video2.png"
+    },
+    {
+        "id": 15,
+        "name": "MSI GAMING RTX 4070",
+        "type": "Video",
+        "price": 789,
+        "image": "../img/Desktop/video3.png"
+    },
+    {
+        "id": 16,
+        "name": "Deepcool LS720 SE",
+        "type": "cooler",
+        "price": 129,
+        "image": "../img/Desktop/cooler1.png"
+    },
+    {
+        "id": 17,
+        "name": "NZXT Kraken Elite 360",
+        "type": "cooler",
+        "price": 276,
+        "image": "../img/Desktop/cooler2.png"
+    },
+    {
+        "id": 18,
+        "name": "Deepcool LS720 SE",
+        "type": "cooler",
+        "price": 119,
+        "image": "../img/Desktop/cooler3.png"
+    },
+    {
+        "id": 19,
+        "name": "Corsair RM850x",
+        "type": "power",
+        "price": 124,
+        "image": "../img/Desktop/power1.png"
+    },
+    {
+        "id": 20,
+        "name": "Asus ROG THOR P2",
+        "type": "power",
+        "price": 276,
+        "image": "../img/Desktop/power2.png"
+    },
+    {
+        "id": 21,
+        "name": "Asus ROG-STRIX-850G",
+        "type": "power",
+        "price": 679,
+        "image": "../img/Desktop/power3.png"
+    },
+    {
+        "id": 22,
+        "name": "Cougar Cratus ATX",
+        "type": "case",
+        "price": 448,
+        "image": "../img/Desktop/case1.png"
+    },
+    {
+        "id": 23,
+        "name": "Azza Pyramid L",
+        "type": "case",
+        "price": 356,
+        "image": "../img/Desktop/case2.png"
+    },
+    {
+        "id": 24,
+        "name": "Thermaltake AH T600",
+        "type": "case",
+        "price": 229,
+        "image": "../img/Desktop/case3.png"
+    }
+
+
+]
